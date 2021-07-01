@@ -1,0 +1,26 @@
+{
+  "mainHeading": "Welcome to the post!",
+  "subHeading": [
+    {
+      "subHeading": "I have odd cosmic thoughts every day",
+      "subContent": "For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.",
+      "image": "../assets/images/srv1.jpg"
+    }
+  ],
+  "tags": [
+    "angular",
+    "2.0"
+  ],
+  "mainContent": "main content",
+  "comment": [
+    {
+      "pComment": [
+        {
+          "cComment": "child comment"
+        }
+      ]
+    }
+  ],
+  "postedOn": "January 1, 2021",
+  "postedBy": "Dev"
+}

@@ -1,0 +1,32 @@
+<article>
+    <!-- Post header-->
+    <header class="mb-4">
+
+
+        <!-- Post categories-->
+
+        <div *ngIf="myBlog">
+
+            <h1 class="fw-bolder mb-1">{{myBlog.mainHeading}}</h1>
+
+            <!-- Post meta content-->
+            <div class="text-muted fst-italic mb-2">Posted on {{myBlog.postedOn}} by {{myBlog.postedBy}}</div>
+            <!-- run loop for tags -->
+            <br> <a *ngFor="let tag of myBlog.tags" class="badge bg-secondary text-decoration-none link-light"
+                href="#!">{{tag}}</a>
+        </div>
+
+    </header>
+    <!-- Post content - Main content-->
+    <span *ngIf="myBlog">
+        <section class="mb-5" *ngFor="let sub of myBlog.subHeading;let i=index">
+
+            <!-- Preview image figure-->
+
+            <figure class="mb-4"><img class="img-fluid rounded" src="{{sub.image}}" alt="..." /></figure>
+
+            <h2 class="fw-bolder mb-4 mt-5">{{sub.subHeading}}</h2>
+            <p class="fs-5 mb-4"> {{sub.subContent}}</p>
+        </section>
+    </span>
+</article>
